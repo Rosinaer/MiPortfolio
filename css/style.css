@@ -7,7 +7,7 @@ body {
 }
 /* Navegación */
 nav {
-  background-color: #8391ad;
+  background-color: #5e687a;
   padding: 1rem;
   position: fixed;
   top: 0;
@@ -17,23 +17,24 @@ nav {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
 }
 
-h1 {
+.logo {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin: 0;
 }
 
 nav a {
+  font-size: 1.2rem;
   color: white;
   text-decoration: none;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .header {
@@ -52,14 +53,14 @@ nav a {
   padding-left: 5rem;
 }
 
-.header-content h2 {
+.header-content h1 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-.header-content h3 {
+.header-content h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -86,4 +87,106 @@ nav a {
 .about-section p {
   margin-bottom: 1rem;
   line-height: 1.6;
+}
+
+/* Habilidades */
+
+.skills-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  color: #1a202c;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  gap: 1rem;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+/* Icon colors */
+.icon-csharp {
+  color: #6b21a8;
+}
+.icon-python {
+  color: #0ea5e9;
+}
+.icon-kotlin {
+  color: #a855f7;
+}
+.icon-js {
+  color: #facc15;
+}
+.icon-node {
+  color: #68a063;
+}
+.icon-sql {
+  color: #3b82f6;
+}
+.icon-css {
+  color: #2563eb;
+}
+.icon-html {
+  color: #e44d26;
+}
+.icon-tools {
+  color: #ef4444;
+}
+
+.skill-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #1a202c;
+}
+
+.skill-desc {
+  margin: 0;
+  color: #4a5568;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon {
+    margin-bottom: 0.5rem;
+  }
 }
