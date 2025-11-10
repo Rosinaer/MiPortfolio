@@ -252,6 +252,21 @@ nav a {
   color: #14b8a6;
 }
 
+/* Footer */
+.footer {
+  background-color: #8391ad;
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 1.5rem;
